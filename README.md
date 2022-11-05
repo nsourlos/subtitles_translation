@@ -4,16 +4,10 @@
 
 
 [![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
-
-![Alt text](./ translate-subtitles-greek.svg)
-<img src="./translate-subtitles-greek.svg">
-
-[![forthebadge](https://forthebadge.com/images/badges/uses-badges.svg)](https://forthebadge.com)<br>
+[![forthebadge](https://forthebadge.com/images/badges/uses-badges.svg)](https://forthebadge.com)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://opensource.org/licenses/MIT)
-
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)]( https://github.com/nsourlos/subtitles_translation)
-
 OR
 [![Maintenance]( https://img.shields.io/badge/Maintained%3F-no-red.svg)]( https://github.com/nsourlos/subtitles_translation)
 
@@ -23,11 +17,11 @@ Translate Subtitles from any Language to Greek
 
 Directly execute an exe file to select and translate subtitles from any language to Greek. THIS TOOL HAS BEEN TESTED AND WORKS ON WINDOWS 10. IT PROBABLY DOES NOT WORK ON WINDOWS 7
 
-Exe files were created using [auto-py-to-exe]( https://pypi.org/project/auto-py-to-exe/) module which utilizes [pyinstaller] (https://pyinstaller.org/en/stable/index.html).
+Exe files were created using [auto-py-to-exe]( https://pypi.org/project/auto-py-to-exe/) module which utilizes [pyinstaller](https://pyinstaller.org/en/stable/index.html).
 
 There are 3 scripts in total:
  - one to install python, 
- - one to install the library [translatesubs] (https://pypi.org/project/translatesubs/) - can only be executed through command line and this is why python is needed - as well as to find and print the path that need to be added in the environmental variables (details below),
+ - one to install the library [translatesubs](https://pypi.org/project/translatesubs/) - can only be executed through command line and this is why python is needed - as well as to find and print the path that need to be added in the environmental variables (details below),
  - one to select the subtitles file, translate it to Greek and save it
 
 The first two files should only be executed once, the first time that we try to translate subtitles in a specific computer. After that, only the third script/exe file should be used to translate subtitles.
@@ -36,25 +30,25 @@ The first two files should only be executed once, the first time that we try to 
 
 ### python_install
 
-This file is used to install python version 3.7. The exe file ‘python-3.7.0-amd64’ should be selected when this script/exe file is executed. The script initializes a [Tkinter] (https://docs.python.org/3/library/tkinter.html) window that allows users to select the python executable mentioned above, to be installed automatically using the [subprocess] (https://docs.python.org/3/library/subprocess.html) library. Python is needed since the [translatesubs] (https://pypi.org/project/translatesubs/) library can only be installed and used with [pip] (https://pypi.org/project/pip/), which requires python installation. 
+This file is used to install python version 3.7. The exe file **python-3.7.0-amd64** should be selected when this script/exe file is executed. The script initializes a [Tkinter](https://docs.python.org/3/library/tkinter.html) window that allows users to select the python executable mentioned above, to be installed automatically using the [subprocess](https://docs.python.org/3/library/subprocess.html) library. Python is needed since the [translatesubs](https://pypi.org/project/translatesubs/) library can only be installed and used with [pip](https://pypi.org/project/pip/), which requires python installation. 
 
-The exe file of this shows the [Tkinter] (https://docs.python.org/3/library/tkinter.html) window along with instructions printed in terminal window asking the user to ‘Please select the python.exe file to install:’. The user should select the ‘python-3.7.0-amd64’ and the installation will be performed automatically. After that, the window and the terminal will shut down.
-
-### path_extraction
-
-This file is used to install the [translatesubs] (https://pypi.org/project/translatesubs/) library which is used to translate the subtitles and to print the path which should be manually added by the user in the [‘Environmental variables’] (https://helpdeskgeek.com/windows-10/add-windows-path-environment-variable/) path. The latter is needed so that pip can see the installed libraries.
-
-[Translatesubs] (https://pypi.org/project/translatesubs/) library is used since it performs really well when sentences extend in more than one timestamps of a subtitle. It uses [googletrans] (https://pypi.org/project/googletrans/) library which allows free and unlimited Google Translate API requests to translate the subtitles. 
-
-The exe file just asks the user to select a file in the Desktop so that it can extract the right path which should be added in the [‘Environmental variables’] (https://helpdeskgeek.com/windows-10/add-windows-path-environment-variable/) and it prints it to the user in the command line tool. When the user copies and pastes that path it can exit by clicking ‘Enter’ in the terminal window.
+The exe file of this shows the [Tkinter](https://docs.python.org/3/library/tkinter.html) window along with instructions printed in terminal window asking the user to **Please select the python.exe file to install:**. The user should select the **python-3.7.0-amd64** and the installation will be performed automatically. After that, the window and the terminal will shut down.
 
 ### path_extraction
 
-This is where the translation happens. This file should be used everytime we want to translate a specific srt file. The tool first tries to translate the subtitles using the [Translatesubs] (https://pypi.org/project/translatesubs/) library. If this fails then it tries again by using some separators (more information on that in the documentation of the library). If this fails then it ...........
+This file is used to install the [translatesubs](https://pypi.org/project/translatesubs/) library which is used to translate the subtitles and to print the path which should be manually added by the user in the [Environmental variables](https://helpdeskgeek.com/windows-10/add-windows-path-environment-variable/) path. The latter is needed so that pip can see the installed libraries.
+
+[Translatesubs](https://pypi.org/project/translatesubs/) library is used since it performs really well when sentences extend in more than one timestamps of a subtitle. It uses [googletrans](https://pypi.org/project/googletrans/) library which allows free and unlimited Google Translate API requests to translate the subtitles. 
+
+The exe file just asks the user to select a file in the Desktop so that it can extract the right path which should be added in the [Environmental variables](https://helpdeskgeek.com/windows-10/add-windows-path-environment-variable/) and it prints it to the user in the command line tool. When the user copies and pastes that path it can exit by clicking **Enter** in the terminal window.
+
+### path_extraction
+
+This is where the translation happens. This file should be used everytime we want to translate a specific srt file. The tool first tries to translate the subtitles using the [Translatesubs](https://pypi.org/project/translatesubs/) library. If this fails then it tries again by using some separators (more information on that in the documentation of the library). If this fails then it ...........
 
 At the end, it removes all the non-Greek characters since the above library keeps them both in the final subtitles. 
 
-The exe file prompts the user to select the srt file to translate and it returns the translated srt file in Greek in the same directory as the exe file/script, named as ‘Output.srt’. 
+The exe file prompts the user to select the srt file to translate and it returns the translated srt file in Greek in the same directory as the exe file/script, named as `Output.srt`. 
 
 
 ### License

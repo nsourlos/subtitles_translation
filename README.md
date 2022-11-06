@@ -39,13 +39,12 @@ This file is used to install python version 3.7. The exe file **[python-3.7.0-am
 The exe file for this script shows the [Tkinter](https://docs.python.org/3/library/tkinter.html) window along with a print in the terminal that asks the user:
 
 ```bash
-**Please select the python.exe file to install:**
+Please select the python.exe file to install:
 ```
 
 The user should select the file **[python-3.7.0-amd64](/exe_installation/python-3.7.0-amd64.exe)** and the installation will be done automatically. After that, the window and the terminal will shut down.
 
 <!-- ![This is an image](https://myoctocat.com/assets/images/base- octocat.svg) -->
-![Alt text]
 <img src="./script_images/script_1.png">
 
 
@@ -57,7 +56,6 @@ This file is used to install the [translatesubs](https://pypi.org/project/transl
 
 The exe file just asks the user to select a file in the Desktop so that it can extract the right path which should be added in the [Environmental variables](https://helpdeskgeek.com/windows-10/add-windows-path-environment-variable/) and it prints it to the user in the command line tool. When the user copies and pastes that path it can exit by clicking **Enter** in the terminal window.
 
-![Alt text]
 <img src="./script_images/script_2.png">
  
 ### [translation](/translation.py) 
@@ -68,7 +66,6 @@ At the end, it removes all the non-Greek characters since the above library keep
 
 The exe file prompts the user to select the srt file to translate and it returns the translated srt file in Greek, and in the same directory where this exe file/script is located, named as `Output.srt`. 
 
-![Alt text]
 <img src="./script_images/script_3.png">
 
 ## Contributing

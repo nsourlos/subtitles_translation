@@ -16,7 +16,7 @@ Execute an exe file to select and translate subtitles from any language to Greek
 
 > This tool has been tested and works on Windows 10. It probably won’t work in other operating systems (tested and does <ins>not</ins> work on Windows 7).
 
-Exe files were created using [auto-py-to-exe]( https://pypi.org/project/auto-py-to-exe/) module which utilizes [pyinstaller](https://pyinstaller.org/en/stable/index.html).
+Exe files were created using [auto-py-to-exe]( https://pypi.org/project/auto-py-to-exe/) module which utilizes [pyinstaller](https://pyinstaller.org/en/stable/index.html). More information on how to use it to create exe files can be found [here]( https://nitratine.net/blog/post/issues-when-using-auto-py-to-exe/?utm_source=auto_py_to_exe&utm_medium=readme_link&utm_campaign=auto_py_to_exe_help)
 
 There are 3 executable files (based on scripts) in this project:
  - [one](/exe_installation/1.python_install.exe) to install python, 

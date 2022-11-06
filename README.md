@@ -19,9 +19,9 @@ Execute an exe file to select and translate subtitles from any language to Greek
 Exe files were created using [auto-py-to-exe]( https://pypi.org/project/auto-py-to-exe/) module which utilizes [pyinstaller](https://pyinstaller.org/en/stable/index.html).
 
 There are 3 executable files (based on scripts) in this project:
- - [one](/exe_installation/1.python_install.py) to install python, 
- - [one](/exe_installation/2.path_extraction.py) to install the library [translatesubs](https://pypi.org/project/translatesubs/), which only be executed through the command line and this is why python is needed - as well as to find and print the path that needs to be added in the environmental variables (details below),
- - [one](/exe_installation/3./translation.py) to select the subtitles file, translate it to Greek and save the translated subtitles file
+ - [one](/exe_installation/1.python_install.exe) to install python, 
+ - [one](/exe_installation/2.path_extraction.exe) to install the library [translatesubs](https://pypi.org/project/translatesubs/), which only be executed through the command line and this is why python is needed - as well as to find and print the path that needs to be added in the environmental variables (details below),
+ - [one](/exe_installation/3.translation.exe) to select the subtitles file, translate it to Greek and save the translated subtitles file
 
 The first two files should only be executed the first time that we try to translate subtitles in a specific computer. After that, only the third script/exe file should be used to translate subtitles.
 

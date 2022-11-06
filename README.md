@@ -28,11 +28,14 @@ The first two files should only be executed once, the first time that we try to 
 
 ## Details of  files 
 
-### python_install
+### python_install [python_install](/python_install.py)
 
 This file is used to install python version 3.7. The exe file **python-3.7.0-amd64** should be selected when this script/exe file is executed. The script initializes a [Tkinter](https://docs.python.org/3/library/tkinter.html) window that allows users to select the python executable mentioned above, to be installed automatically using the [subprocess](https://docs.python.org/3/library/subprocess.html) library. Python is needed since the [translatesubs](https://pypi.org/project/translatesubs/) library can only be installed and used with [pip](https://pypi.org/project/pip/), which requires python installation. 
 
 The exe file of this shows the [Tkinter](https://docs.python.org/3/library/tkinter.html) window along with instructions printed in terminal window asking the user to **Please select the python.exe file to install:**. The user should select the **python-3.7.0-amd64** and the installation will be performed automatically. After that, the window and the terminal will shut down.
+
+![This is an image](https://myoctocat.com/assets/images/base-octocat.svg)
+ 
 
 ### path_extraction
 
@@ -41,7 +44,8 @@ This file is used to install the [translatesubs](https://pypi.org/project/transl
 [Translatesubs](https://pypi.org/project/translatesubs/) library is used since it performs really well when sentences extend in more than one timestamps of a subtitle. It uses [googletrans](https://pypi.org/project/googletrans/) library which allows free and unlimited Google Translate API requests to translate the subtitles. 
 
 The exe file just asks the user to select a file in the Desktop so that it can extract the right path which should be added in the [Environmental variables](https://helpdeskgeek.com/windows-10/add-windows-path-environment-variable/) and it prints it to the user in the command line tool. When the user copies and pastes that path it can exit by clicking **Enter** in the terminal window.
-
+![This is an image](https://myoctocat.com/assets/images/base-octocat.svg)
+ 
 ### path_extraction
 
 This is where the translation happens. This file should be used everytime we want to translate a specific srt file. The tool first tries to translate the subtitles using the [Translatesubs](https://pypi.org/project/translatesubs/) library. If this fails then it tries again by using some separators (more information on that in the documentation of the library). If this fails then it ...........
@@ -50,7 +54,8 @@ At the end, it removes all the non-Greek characters since the above library keep
 
 The exe file prompts the user to select the srt file to translate and it returns the translated srt file in Greek in the same directory as the exe file/script, named as `Output.srt`. 
 
-
+![This is an image](https://myoctocat.com/assets/images/base-octocat.svg)
+ 
 ### License
 [MIT License](LICENSE)
 

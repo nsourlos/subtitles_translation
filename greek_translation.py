@@ -28,7 +28,7 @@ filenames = askopenfilenames() # show an "Open" dialog box and return the path t
 for filename in filenames: #Loop over each of the selected files to translate
     
     #Check for valid file types
-    if filename.split('.')[-1]!='srt' and filename.split('.')[-1]!='txt' and filename.split('.')[-1]!='sub':
+    if filename.split('.')[-1]!='srt':
         print("File {} not processed. Please select a valid file type (.srt, .txt, .sub)".format(filename))
     
     else:

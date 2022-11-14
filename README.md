@@ -10,7 +10,7 @@
 
 Translate Subtitles from any Language to Greek
 
-Execute the **[greek_translation.exe](https://drive.google.com/file/d/1OGQae5Zdw_YuJ1v7CDt8EAIYCWQEoIxo/view?usp=sharing)** file to select subtitle files, translate them from any language to Greek and save them in the same directory as the original files.
+Execute the **[greek_translation.exe](https://drive.google.com/file/d/1bbEn9grYSoEtc-9nPsfd25ZkkCP5q8Aq/view?usp=sharing)** file to select subtitle files, translate them from any language to Greek and save them in the same directory as the original files.
 
 ***An internet connection is required for this tool to work!***
 
@@ -32,10 +32,7 @@ Please select the srt files to translate:
 This can be seen in the screenshot below:
 <img src="./script_images/script_translation.png">
 
-The user should select the subtitles of interest, but they all have to be in one of the following formats:
-- srt
-- txt
-- sub
+The user should select the subtitles of interest, but they all have to be in `srt` format.
 
 If a different file extension is provided the translation won’t work and the following error will be printed:
 
